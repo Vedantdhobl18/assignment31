@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Page</title>
+    <style>
+        .box-img{
+            padding: 20px 40px;
+        }
+        #main-product-img{
+            width: auto;
+            height: 500px;
+          object-fit: cover;
+            border: 1px solid black;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+            margin: 30px auto;
+            display: block;
+           
+        }
+        .Product-img{
+            height: 90px;
+            width: 60px;
+           
+            padding: 20px 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: 10px;
+            cursor: pointer;
+
+        }
+        .Product-img-container{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <img src="phone1.jpg" id="main-product-img" class="box-img"/>
+    <div class="Product-img-container">
+
+        <img src="phone1.jpg" class="Product-img" onclick="changeImage(1)"/>
+        <img src="phone2.jpg" class="Product-img" onclick="changeImage(2)"/>
+        <img src="phone3.jpg" class="Product-img" onclick="changeImage(3)"/>
+        <img src="phone4.jpg" class="Product-img" onclick="changeImage(4)"/>
+        <img src="phone5.jpg" class="Product-img" onclick="changeImage(5)"/>
+        <img src="phone6.jpg" class="Product-img" onclick="changeImage(6)"/>
+
+
+
+    </div>
+    <script>
+        function changeImage(num){
+            const mainImage = document.getElementById('main-product-img');
+
+            if(num==1){
+                mainImage.src = "phone1.jpg";
+            }else if (num==2){
+                mainImage.src = "phone2.jpg";
+            } else if (num==3) {
+                mainImage.src = "phone3.jpg";
+            }else if (num==4) {
+                mainImage.src = "phone4.jpg";
+            }else if (num==5) {
+                mainImage.src = "phone5.jpg";
+            }else if (num==6) {
+                mainImage.src = "phone6.jpg";
+            }
+            
+
+
+        }
+    </script>
+</body>
+</html>
